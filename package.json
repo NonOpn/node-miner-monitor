@@ -1,0 +1,25 @@
+{
+  "name": "miner-monitor",
+  "version": "0.0.1",
+  "description": "wrapper for claymore/ethminer api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NonOpn/node-miner-monitor.git"
+  },
+  "keywords": [
+    "miner",
+    "monitor",
+    "ethminer",
+    "claymore"
+  ],
+  "author": "Kévin Le Perf",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/NonOpn/node-miner-monitor/issues"
+  },
+  "homepage": "https://github.com/NonOpn/node-miner-monitor#readme"
+}
