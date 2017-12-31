@@ -17,6 +17,13 @@ class DataRetriever {
         client.write('{"id":0,"jsonrpc":"2.0","method":"miner_getstat1"}\n');
       });
 
+      setTimeout(() => {
+        if(!rejected) {
+          rejected = true;
+          client.destroy();
+        }
+      }, TIMEOUT);
+
       client.on('data', (data) => {
         try {
           const json = JSON.parse(data.toString());
@@ -100,6 +107,7 @@ class DataRetriever {
       client.on('close', () => {
         if(!rejected) {
           reject();
+          rejected = true;
         }
       });
     });
