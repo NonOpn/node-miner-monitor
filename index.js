@@ -1,6 +1,7 @@
+import { createConnection } from "net";
+
 class DataRetriever {
-  constructor(monitor, createConnection) {
-    this.createConnection = createConnection;
+  constructor(monitor) {
     this.monitor = monitor;
   }
 

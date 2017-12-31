@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/NonOpn/node-miner-monitor/issues"
   },
-  "homepage": "https://github.com/NonOpn/node-miner-monitor#readme"
+  "homepage": "https://github.com/NonOpn/node-miner-monitor#readme",
+  "dependencies": {
+    "net": "^1.0.2"
+  }
 }
