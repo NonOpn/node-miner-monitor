@@ -9,38 +9,13 @@ npm install --save https://github.com/NonOpn/node-miner-monitor
 
 # Use
 
-## Pure NodeJS implementation
-
 ```
-const net = require("net");
-
 const DataRetriever = require("miner-monitor");
 
 const retriever = new DataRetriever({
   host: "some_host",
   port: some_port
-}, net.createConnection);
-
-retriever
-.then(state => {
-  //state -> see below
-})
-.catch(err => {
-
 });
-```
-
-## Custom React Native Application
-
-```
-
-import { createConnection } from "react-native-tcp";
-import DataRetriever from "miner-monitor";
-
-const retriever = new DataRetriever({
-  host: "some_host",
-  port: some_port
-}, net.createConnection);
 
 retriever
 .then(state => {
