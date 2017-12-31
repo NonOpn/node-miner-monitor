@@ -1,5 +1,9 @@
 # node-miner-monitor
-NodeJS Miner monitor library
+
+Simple library for NodeJS to monitor Claymore and Ethminer
+
+[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+
 
 # Install
 
@@ -69,3 +73,14 @@ The library returns a Promise whith an object describing the current miner state
   type: "ethminer" or "claymore"
 }
 ```
+
+## Contributing
+
+When contributing to this repository, please first discuss the change you wish to make via issue,
+email, or any other method with the owners of this repository before making a change.
+
+Please note we have a code of conduct, please follow it in all your interactions with the project.
+
+## License
+
+This project is licensed under the GPL v3 License - see the [LICENSE.md](LICENSE.md) file for details
