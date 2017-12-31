@@ -1,5 +1,7 @@
 import { createConnection } from "net";
 
+const TIMEOUT = 10000;
+
 class DataRetriever {
   constructor(monitor) {
     this.monitor = monitor;
