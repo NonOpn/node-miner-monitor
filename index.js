@@ -35,6 +35,7 @@ class DataRetriever {
         if(!rejected) {
           rejected = true;
           client.destroy();
+          reject();
         }
       }, TIMEOUT);
 
