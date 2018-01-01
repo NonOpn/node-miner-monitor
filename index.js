@@ -2,8 +2,20 @@ import { createConnection } from "net";
 
 const TIMEOUT = 10000;
 
+/**
+  Check wether a given object is a function
+  - credits to underscore.js
+  */
+
+function isFunction(obj) {
+  return !!(obj && obj.constructor && obj.call && obj.apply);
+}
+
 class DataRetriever {
-  constructor(monitor) {
+  //possible injection here
+  constructor(monitor, connection) {
+    if(isFunction(connection)) this.createConnection = connection;
+    else this.createConnection = createConnection;
     this.monitor = monitor;
   }
 

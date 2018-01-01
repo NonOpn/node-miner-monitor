@@ -13,6 +13,16 @@ npm install --save https://github.com/NonOpn/node-miner-monitor
 
 # Use
 
+## Implementation
+
+The DataRetriever class must be given :
+  - an object describing the miner to monitor
+  - the createConnection function _{optionnal}_
+
+Note : for React Native, it is mandatory (for now) to use the createConnection injection construction. Please head over our mobile app for example
+
+## Pure NodeJS usage example
+
 ```
 const DataRetriever = require("miner-monitor");
 
