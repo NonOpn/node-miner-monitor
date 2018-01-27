@@ -24,7 +24,7 @@ class DataRetriever {
 
     return new Promise((resolve, reject) => {
       var rejected = false;
-      let client = createConnection(monitor.port, monitor.host, () => {
+      let client = this.createConnection(monitor.port, monitor.host, () => {
         //if the following response call does not permit to make the difference
         //between claymore and ethminer
         //a change can be done : claymore does not wait for \n whereas ethminer does
